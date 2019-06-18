@@ -1,0 +1,25 @@
+<!--    HTML5 ตอนที่ 17 การสร้างตาราง (Table)    -->
+้<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <table style="width: 50%;" border="1">
+        <tr> <!--ตารางแถว-->
+            <th>ชื่อ</th> <!--ตารางหัวข้อ head-->
+            <th>นามสกุล</th>
+            <th>อายุ</th>
+        </tr>
+        <tr> <!--แถวที่ 2-->
+            <td rowspan="2">อัสมัธ</td> <!--ตารางเนื้อหา body : rowspan กินไปสองแถว-->
+            <td>สาและ</td>
+            <td>23</td>
+        </tr>
+        <tr> <!--แถวที่ 3-->
+            <td colspan="2">ไม่รู้</td> <!--ตารางเนื้อหา body : colspan กินไปสองคอลัมน์-->
+        </tr>
+    </table>
+</body>
+</html>

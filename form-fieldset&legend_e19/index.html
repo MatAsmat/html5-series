@@ -1,0 +1,37 @@
+<!--    HTML5 ตอนที่ 19 การสร้างฟอร์ม    -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fieldset & Legend</title>
+    <style>
+        label { 
+            display: block;  
+        }
+    </style> <!--style label เพื่อให้กล่องอยู่ทีละบรรทัดกัน-->
+</head>
+<body>
+    <form action="#"> <!--action ยังไม่ต้องมี ใช้ตอนทำงานกับภาษา server อย่างเช่น php-->
+        <fieldset> <!--เส้นกรอบ-->
+            <legend> <!--ข้อความที่ทับกรอบ เพื่อให้ดูเก๋-->
+                Register สมัครสมาชิก
+            </legend>
+            <label>
+                Username : <!--ยังไม่สมบูรณ์ตรงที required autofocus autocomplete -->
+                <input type="text" name="userName" placeholder="Username" required autofocus autocomplete>
+            </label>
+            <label>
+                Email :
+                <input type="email" name="email" placeholder="Email" required autofocus autocomplete>
+            </label>
+            <label>
+                Password :
+                <input type="password" name="password" placeholder="Password" required autofocus autocomplete>
+            </label>
+            <input type="submit" value="submit">
+        </fieldset>
+    </form>
+</body>
+</html>
